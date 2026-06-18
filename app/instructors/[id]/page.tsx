@@ -16,7 +16,7 @@ export default async function InstructorPage({
       <div className="min-h-screen bg-gray-50">
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-2xl mx-auto text-center py-16">
-            <div className="text-6xl mb-4">❌</div>
+            <div className="text-6xl mb-4"></div>
             <h1 className="text-3xl font-bold text-red-600 mb-4">Преподаватель не найден</h1>
             <p className="text-gray-700 mb-6">
               Преподаватель с таким идентификатором не существует или был удалён
@@ -58,7 +58,7 @@ export default async function InstructorPage({
                     ? 'bg-green-100 text-green-700' 
                     : 'bg-red-100 text-red-700'
                 }`}>
-                  {instructor.isActive ? '✅ Активен' : '❌ Неактивен'}
+                  {instructor.isActive ? ' Активен' : ' Неактивен'}
                 </span>
               </div>
             </div>
@@ -67,7 +67,7 @@ export default async function InstructorPage({
               {/* Информация о преподавателе */}
               <div className="bg-blue-50 p-6 rounded-xl border border-blue-200">
                 <h2 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                  <span>📋</span> Информация о преподавателе
+                  <span></span> Информация о преподавателе
                 </h2>
                 
                 {/* Описание */}
@@ -95,7 +95,7 @@ export default async function InstructorPage({
               {/* Курсы преподавателя */}
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                  <span>📚</span> Курсы преподавателя
+                  <span></span> Курсы преподавателя
                 </h2>
                 {instructor.courses && instructor.courses.length > 0 ? (
                   <div className="grid gap-4">
@@ -112,7 +112,7 @@ export default async function InstructorPage({
                             {course.price.toLocaleString('ru-RU')} руб.
                           </span>
                           <span className="text-sm text-gray-600">
-                            📆 Создан: {new Date(course.createdAt).toLocaleDateString('ru-RU')}
+                             Создан: {new Date(course.createdAt).toLocaleDateString('ru-RU')}
                           </span>
                         </div>
                       </Link>
@@ -120,7 +120,7 @@ export default async function InstructorPage({
                   </div>
                 ) : (
                   <div className="bg-gray-50 p-8 rounded-xl text-center">
-                    <div className="text-6xl mb-4">📚</div>
+                    <div className="text-6xl mb-4"></div>
                     <p className="text-gray-700 text-lg">
                       У этого преподавателя пока нет курсов
                     </p>
@@ -131,7 +131,7 @@ export default async function InstructorPage({
               {/* Дата создания */}
               {instructor.createdAt && (
                 <div className="text-sm text-gray-600 flex items-center gap-2">
-                  <span>📆</span>
+                  <span></span>
                   Добавлен:{' '}
                   <span className="font-medium">
                     {new Date(instructor.createdAt).toLocaleDateString('ru-RU', {
@@ -150,7 +150,7 @@ export default async function InstructorPage({
                 href={`/instructors/${instructor.id}/edit`}
                 className="bg-yellow-500 text-white px-6 py-3 rounded-xl hover:bg-yellow-600 transition font-medium flex items-center gap-2"
               >
-                <span>✏️</span>
+                <span></span>
                 Редактировать
               </Link>
               <Link

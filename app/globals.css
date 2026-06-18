@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+:root {
+  /* Принудительно светлая тема */
+  --background: #f9fafb;  /* Светлый фон (аналог gray-50) */
+  --foreground: #111827;  /* Тёмный текст (аналог gray-900) */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/* Убрали блок @media (prefers-color-scheme: dark) */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}

@@ -1,6 +1,6 @@
 import { Instructor, Course } from './types';
 
-// In-memory хранилище
+// In-memory
 let instructors: Instructor[] = [];
 let courses: Course[] = [];
 
@@ -74,7 +74,7 @@ export function seedData() {
   instructors = [inst1, inst2, inst3, inst4, inst5];
 
   courses = [
-  // Курсы Ивана Петрова (inst-1)
+  // Курсы Ивана Петрова 
   { 
     id: 'course-1', 
     title: 'Основы JavaScript', 
@@ -100,7 +100,7 @@ export function seedData() {
     createdAt: '2026-03-10T10:00:00.000Z' 
   },
   
-  // Курсы Анны Сидоровой (inst-2)
+  // Курсы Анны Сидоровой
   { 
     id: 'course-3', 
     title: 'Базы данных SQL', 
@@ -126,7 +126,7 @@ export function seedData() {
     createdAt: '2026-04-01T10:00:00.000Z' 
   },
   
-  // Курсы Дмитрия Иванова (inst-3)
+  // Курсы Дмитрия Иванова
   { 
     id: 'course-9', 
     title: 'HTML и CSS для начинающих', 
@@ -144,7 +144,7 @@ export function seedData() {
     createdAt: '2026-03-01T10:00:00.000Z' 
   },
   
-  // Курсы Елены Смирновой (inst-4)
+  // Курсы Елены Смирновой
   { 
     id: 'course-4', 
     title: 'TypeScript для профессионалов', 
@@ -170,7 +170,7 @@ export function seedData() {
     createdAt: '2026-04-05T10:00:00.000Z' 
   },
   
-  // Курсы Сергея Козлова (inst-5)
+  // Курсы Сергея Козлова
   { 
     id: 'course-5', 
     title: 'Алгоритмы и структуры данных', 

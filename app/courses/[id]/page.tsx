@@ -16,7 +16,7 @@ export default async function CoursePage({
       <div className="min-h-screen bg-gray-50">
         <div className="container mx-auto px-4 py-8">
           <div className="max-w-2xl mx-auto text-center py-16">
-            <div className="text-6xl mb-4">❌</div>
+            <div className="text-6xl mb-4"></div>
             <h1 className="text-3xl font-bold text-red-600 mb-4">Курс не найден</h1>
             <p className="text-gray-700 mb-6">
               Курс с таким идентификатором не существует или был удалён
@@ -56,7 +56,7 @@ export default async function CoursePage({
               {/* Описание курса */}
               <div className="bg-gray-50 p-6 rounded-xl border border-gray-200">
                 <h2 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
-                  <span>📖</span> Описание курса
+                  <span></span> Описание курса
                 </h2>
                 <p className="text-gray-700 leading-relaxed text-base">
                   {course.description}
@@ -75,7 +75,7 @@ export default async function CoursePage({
               {course.instructor && (
                 <div className="bg-blue-50 p-6 rounded-xl border border-blue-200">
                   <h2 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                    <span>👨‍🏫</span> Преподаватель курса
+                    <span></span> Преподаватель курса
                   </h2>
                   <div className="flex items-start gap-4">
                     <div className="flex-1">
@@ -90,11 +90,11 @@ export default async function CoursePage({
                       )}
                       <div className="mt-3 space-y-2 text-gray-700">
                         <p className="flex items-center gap-2">
-                          <span className="text-gray-500">📧</span>
+                          <span className="text-gray-500"></span>
                           {course.instructor.email}
                         </p>
                         <p className="flex items-center gap-2">
-                          <span className="text-gray-500">📅</span>
+                          <span className="text-gray-500"></span>
                           Опыт работы: <span className="font-semibold">{course.instructor.experienceYears} лет</span>
                         </p>
                       </div>
@@ -106,7 +106,7 @@ export default async function CoursePage({
               {/* Дата создания */}
               {course.createdAt && (
                 <div className="text-sm text-gray-600 flex items-center gap-2">
-                  <span>📆</span>
+                  <span></span>
                   Дата создания:{' '}
                   <span className="font-medium">
                     {new Date(course.createdAt).toLocaleDateString('ru-RU', {
@@ -125,7 +125,7 @@ export default async function CoursePage({
                 href={`/courses/${course.id}/edit`}
                 className="bg-yellow-500 text-white px-6 py-3 rounded-xl hover:bg-yellow-600 transition font-medium flex items-center gap-2"
               >
-                <span>✏️</span>
+                <span></span>
                 Редактировать курс
               </Link>
               <Link

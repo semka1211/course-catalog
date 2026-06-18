@@ -84,7 +84,7 @@ export default function CoursesPage() {
         <div className="grid md:grid-cols-2 gap-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
-              🔍 Поиск
+               Поиск
             </label>
 <input
   type="text"
@@ -96,7 +96,7 @@ export default function CoursesPage() {
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
-              👨‍🏫 Фильтр по преподавателю
+              Фильтр по преподавателю
             </label>
 <select
   value={instructorFilter}
@@ -157,7 +157,7 @@ export default function CoursesPage() {
                         </span>
                         {instructor && (
                           <span className="text-gray-600">
-                            👨‍{' '}
+                            {' '}
                             <Link 
                               href={`/instructors/${instructor.id}`} 
                               className="text-blue-600 hover:underline font-medium"
@@ -179,7 +179,7 @@ export default function CoursesPage() {
                         onClick={() => handleDelete(course.id, course.title)}
                         className="bg-red-100 text-red-700 px-4 py-2 rounded-lg hover:bg-red-200 transition font-medium"
                       >
-                        🗑️ Удалить
+                        Удалить
                       </button>
                     </div>
                   </div>

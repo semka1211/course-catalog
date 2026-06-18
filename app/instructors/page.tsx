@@ -89,7 +89,7 @@ export default function InstructorsPage() {
 
           {instructors.length === 0 ? (
             <div className="text-center py-16 bg-white rounded-2xl shadow-md border border-gray-200">
-              <div className="text-6xl mb-4">👨‍🏫</div>
+              <div className="text-6xl mb-4"></div>
               <p className="text-gray-700 text-lg">Преподаватели не найдены</p>
             </div>
           ) : (
@@ -109,12 +109,12 @@ export default function InstructorsPage() {
                           {inst.name}
                         </Link>
                         <div className="flex gap-4 mt-2 text-gray-700">
-                          <span>📧 {inst.email}</span>
-                          <span>📅 {inst.experienceYears} лет опыта</span>
+                          <span>{inst.email}</span>
+                          <span>{inst.experienceYears} лет опыта</span>
                           {inst.isActive ? (
-                            <span className="text-green-700 font-medium">✅ Активен</span>
+                            <span className="text-green-700 font-medium"> Активен</span>
                           ) : (
-                            <span className="text-red-700 font-medium">❌ Неактивен</span>
+                            <span className="text-red-700 font-medium"> Неактивен</span>
                           )}
                         </div>
                       </div>
@@ -123,13 +123,13 @@ export default function InstructorsPage() {
                           href={`/instructors/${inst.id}/edit`} 
                           className="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-lg hover:bg-yellow-200 transition font-medium"
                         >
-                          ✏️ Изменить
+                           Изменить
                         </Link>
                         <button 
                           onClick={() => handleDelete(inst.id, inst.name)}
                           className="bg-red-100 text-red-800 px-4 py-2 rounded-lg hover:bg-red-200 transition font-medium"
                         >
-                          🗑️ Удалить
+                          Удалить
                         </button>
                       </div>
                     </div>

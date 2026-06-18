@@ -17,13 +17,13 @@ export default function Home() {
             href="/instructors" 
             className="bg-blue-600 text-white px-8 py-4 rounded-xl hover:bg-blue-700 transition shadow-lg hover:shadow-xl font-medium"
           >
-            👨‍🏫 Преподаватели
+             Преподаватели
           </Link>
           <Link 
             href="/courses" 
             className="bg-green-600 text-white px-8 py-4 rounded-xl hover:bg-green-700 transition shadow-lg hover:shadow-xl font-medium"
           >
-            📖 Курсы
+            Курсы
           </Link>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Home() {
       {/* Карточки возможностей */}
       <div className="grid md:grid-cols-2 gap-8 mt-16">
         <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition">
-          <div className="text-4xl mb-4">👨‍</div>
+          <div className="text-4xl mb-4"></div>
           <h2 className="text-2xl font-bold mb-3 text-blue-700">Преподаватели</h2>
           <p className="text-gray-700 mb-4">
             Управление профилями преподавателей, их опытом и контактной информацией
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
 
         <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200 hover:shadow-xl transition">
-          <div className="text-4xl mb-4">📖</div>
+          <div className="text-4xl mb-4"></div>
           <h2 className="text-2xl font-bold mb-3 text-green-700">Курсы</h2>
           <p className="text-gray-700 mb-4">
             Каталог учебных курсов с поиском, фильтрацией и пагинацией

@@ -60,7 +60,7 @@ export default function RootLayout({
         {/* Футер */}
         <footer className="bg-white border-t border-gray-200 py-6 mt-auto">
           <div className="container mx-auto px-4 text-center text-gray-700">
-            <p className="font-medium">Практика ИП Шарапов А.Е. | Fullstack Next.js | 2026</p>
+            <p className="font-medium">Каталог учебных курсов и преподавателей</p>
           </div>
         </footer>
       </body>

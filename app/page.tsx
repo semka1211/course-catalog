@@ -38,15 +38,15 @@ export default function Home() {
           </p>
           <ul className="space-y-2 text-gray-800">
             <li className="flex items-center gap-2">
-              <span className="text-green-600 font-bold">✓</span>
+              <span className="text-green-600 font-bold"></span>
               Просмотр списка преподавателей
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-green-600 font-bold">✓</span>
+              <span className="text-green-600 font-bold"></span>
               Создание и редактирование профилей
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-green-600 font-bold">✓</span>
+              <span className="text-green-600 font-bold"></span>
               Просмотр курсов каждого преподавателя
             </li>
           </ul>
@@ -60,34 +60,18 @@ export default function Home() {
           </p>
           <ul className="space-y-2 text-gray-800">
             <li className="flex items-center gap-2">
-              <span className="text-green-600 font-bold">✓</span>
+              <span className="text-green-600 font-bold"></span>
               Поиск по названию и описанию
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-green-600 font-bold">✓</span>
+              <span className="text-green-600 font-bold"></span>
               Фильтрация по преподавателю
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-green-600 font-bold">✓</span>
+              <span className="text-green-600 font-bold"></span>
               Пагинация для удобной навигации
             </li>
           </ul>
-        </div>
-      </div>
-
-      {/* Статистика */}
-      <div className="grid md:grid-cols-3 gap-6 mt-16">
-        <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 text-center">
-          <div className="text-3xl font-bold text-blue-700 mb-2">5+</div>
-          <div className="text-gray-800 font-medium">Преподавателей</div>
-        </div>
-        <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 text-center">
-          <div className="text-3xl font-bold text-green-700 mb-2">5+</div>
-          <div className="text-gray-800 font-medium">Курсов</div>
-        </div>
-        <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 text-center">
-          <div className="text-3xl font-bold text-purple-700 mb-2">100%</div>
-          <div className="text-gray-800 font-medium">TypeScript</div>
         </div>
       </div>
     </div>

@@ -43,12 +43,15 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const newInstructor = {
-      id: store.generateId(),
-      ...validated,
-      isActive: validated.isActive ?? true,
-      createdAt: new Date().toISOString(),
-    };
+const newInstructor = {
+  id: store.generateId(),
+  name: validated.name,
+  email: validated.email,
+  description: validated.description || '',
+  experienceYears: validated.experienceYears,
+  isActive: validated.isActive ?? true,
+  createdAt: new Date().toISOString(),
+};
 
     store.addInstructor(newInstructor);
     return NextResponse.json(newInstructor, { status: 201 });
